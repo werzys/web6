@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const expressCheckbox = document.getElementById("prop-express");
     const totalPriceSpan = document.getElementById("service-total-price");
 
-
     const prices = {
         types: {
             type1: 1000,
@@ -55,13 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let currentPrice = prices.types[selectedType];
 
-       
         if (selectedType === "type1") {
             optionsBlock.style.display = "none";
             propertiesBlock.style.display = "none";
-        }
-        
-        else if (selectedType === "type2") {
+        } else if (selectedType === "type2") {
             optionsBlock.style.display = "block";
             propertiesBlock.style.display = "none";
 
@@ -69,9 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (prices.options[optValue] !== undefined) {
                 currentPrice += prices.options[optValue];
             }
-        }
-        
-        else if (selectedType === "type3") {
+        } else if (selectedType === "type3") {
             optionsBlock.style.display = "none";
             propertiesBlock.style.display = "block";
 
@@ -84,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
         totalPriceSpan.textContent = totalPrice + " руб.";
     }
 
-    
     quantityInput.addEventListener("input", updateServicePrice);
 
     typeRadios.forEach(function (radio) {
@@ -94,6 +87,5 @@ document.addEventListener("DOMContentLoaded", function () {
     selectOption.addEventListener("change", updateServicePrice);
     expressCheckbox.addEventListener("change", updateServicePrice);
 
-    
     updateServicePrice();
 });
