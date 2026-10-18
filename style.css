@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.header__logo {
+    object-fit: cover;
+}
+
+.nav__link {
+    color: #0d6efd;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav__link:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+.links-list li {
+    margin-bottom: 8px;
+    word-break: break-all;
+}
+
+.links-list li:last-child {
+    margin-bottom: 0;
+}
+
+.table caption {
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form__legend {
+    font-size: 1rem;
+}
+
+footer {
+    font-size: 0.9rem;
+}

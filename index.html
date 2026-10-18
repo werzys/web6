@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №6 — Перетолчин Данил</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" defer></script>
+    <script src="service_calc.js" defer></script>
+</head>
+<body id="top" class="bg-light p-3">
+
+    <header class="header container mb-4">
+        <div class="header__inner d-flex flex-wrap align-items-center justify-content-between p-3 bg-white border rounded shadow-sm">
+            <div class="header__brand d-flex align-items-center gap-3">
+                <img src="image.jpg" alt="Логотип" class="header__logo img-fluid rounded" style="max-width: 60px;">
+                <h1 class="header__title h3 m-0 text-primary">Перетолчин Данил</h1>
+            </div>
+            <nav class="nav mt-2 mt-md-0">
+                <ul class="nav__list nav nav-pills">
+                    <li class="nav__item"><a href="#links" class="nav__link nav-link">Гиперссылки</a></li>
+                    <li class="nav__item"><a href="#table" class="nav__link nav-link">Таблица</a></li>
+                    <li class="nav__item"><a href="#form" class="nav__link nav-link">Форма</a></li>
+                    <li class="nav__item"><a href="#calculator" class="nav__link nav-link">Калькулятор ЛР5</a></li>
+                    <li class="nav__item"><a href="#service-calculator" class="nav__link nav-link">Калькулятор услуг ЛР6</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main container">
+        <div class="row g-4">
+
+            <section id="table" class="col-12 col-md-6 order-1 order-md-2 section section--table">
+                <div class="p-3 bg-white border rounded shadow-sm h-100">
+                    <h2 class="section__title text-secondary">Таблица</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle m-0">
+                            <caption class="caption-top">Таблица с объединенными ячейками</caption>
+                            <thead>
+                                <tr>
+                                    <th>Колонка 1</th>
+                                    <th>Колонка 2</th>
+                                    <th>Колонка 3</th>
+                                    <th>Колонка 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">Объединенная ячейка</td>
+                                    <td>Ячейка 1</td>
+                                    <td>Ячейка 2</td>
+                                    <td>Ячейка 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка 4</td>
+                                    <td colspan="2">Объединенная ячейка</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка 5</td>
+                                    <td>Ячейка 6</td>
+                                    <td>Ячейка 7</td>
+                                    <td>Ячейка 8</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка 9</td>
+                                    <td>Ячейка 10</td>
+                                    <td>Ячейка 11</td>
+                                    <td>Ячейка 12</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка 13</td>
+                                    <td>Ячейка 14</td>
+                                    <td>Ячейка 15</td>
+                                    <td>Ячейка 16</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка 17</td>
+                                    <td>Ячейка 18</td>
+                                    <td>Ячейка 19</td>
+                                    <td>Ячейка 20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="links" class="col-12 col-md-6 order-2 order-md-1 section section--links">
+                <div class="p-3 bg-white border rounded shadow-sm h-100">
+                    <h2 class="section__title text-secondary">Список гиперссылок</h2>
+
+                    <ol class="links-list ps-3 mb-0">
+                        <li><a href="http://kubsu.ru/">Абсолютная ссылка на главную страницу kubsu.ru</a></li>
+                        <li><a href="https://kubsu.ru/">Абсолютная ссылка на главную страницу kubsu.ru</a></li>
+                        <li>
+                            <a href="https://kubsu.ru/">
+                                <img src="image.jpg" alt="Логотип КубГУ" class="img-fluid rounded my-1" style="max-width: 120px;">
+                            </a> — ссылка-изображение
+                        </li>
+                        <li><a href="about/about.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                        <li><a href="#top">Ссылка на фрагмент текущей страницы (наверх)</a></li>
+                        <li><a href="page.html?param1=1&amp;param2=2&amp;param3=3">Ссылка с тремя параметрами в URL</a></li>
+                        <li><a href="page.html?id=777">Ссылка с параметром id в URL</a></li>
+                        <li><a href="page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                        <li><a href="about/about.html">Относительная ссылка на страницу в каталоге about</a></li>
+                        <li><a href="level1/page.html">Переход в каталог level1</a></li>
+                        <li><a href="level1/level2/page.html">Переход в каталог level2</a></li>
+                        <li>
+                            Подробная информация размещена в <a href="https://kubsu.ru/">контекстной ссылке внутри текста абзаца</a>.
+                        </li>
+                        <li><a href="https://ru.wikipedia.org/wiki/HTML#History">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                        <li>
+                            Ссылки из прямоугольных и круглых областей картинки: <br>
+                            <img src="circle.jpg" alt="Карта" usemap="#site-map" class="img-fluid border mt-2" style="max-width: 250px;">
+                            <map name="site-map">
+                                <area shape="circle" coords="60,60,40" href="https://ru.wikipedia.org/wiki/Круг" alt="Круг" target="_blank">
+                                <area shape="rect" coords="130,20,210,100" href="https://ru.wikipedia.org/wiki/Квадрат" alt="Квадрат" target="_blank">
+                            </map>
+                        </li>
+                        <li><a href="">Ссылка с пустым href</a></li>
+                        <li><a>Ссылка без атрибута href</a></li>
+                        <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка, запрещенная для перехода поисковиками</a></li>
+                        <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка, запрещенная для индексации поисковиками</a></li>
+                        <li>
+                            Нумерованный список ссылок с подписями title:
+                            <ol class="ps-3 my-1">
+                                <li><a href="https://kubsu.ru/" title="Главный сайт Кубанского Государственного Университета">КубГУ</a></li>
+                                <li><a href="https://e-learning.kubsu.ru/" title="Портал дистанционного обучения">СДО КубГУ</a></li>
+                                <li><a href="https://open.kubsu.ru/" title="Открытые образовательные ресурсы">Открытый КубГУ</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="ftp://user:password@ftp.kubsu.ru/file.zip">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="form" class="col-12 order-3 section section--form">
+                <div class="p-3 p-md-4 bg-white border rounded shadow-sm">
+                    <h2 class="section__title text-secondary mb-3">Форма</h2>
+
+                    <form action="http://httpbin.org/post" method="POST" class="form">
+                        <div class="form__row mb-3">
+                            <label for="fio" class="form__label form-label">1. ФИО:</label>
+                            <input type="text" id="fio" name="fio" class="form__input form-control" placeholder="Иванов Иван Иванович" oninput="this.value = this.value.replace(/[\d]/g, '')" required>
+                        </div>
+
+                        <div class="form__row mb-3">
+                            <label for="phone" class="form__label form-label">2. Телефон:</label>
+                            <input type="tel" id="phone" name="phone" class="form__input form-control" placeholder="+7 (900) 000-00-00" oninput="this.value = this.value.replace(/[^\d\+\(\)\s\-]/g, '')" required>
+                        </div>
+
+                        <div class="form__row mb-3">
+                            <label for="email" class="form__label form-label">3. E-mail:</label>
+                            <input type="email" id="email" name="email" class="form__input form-control" placeholder="email@domain.com" required>
+                        </div>
+
+                        <div class="form__row mb-3">
+                            <label for="birthday" class="form__label form-label">4. Дата рождения:</label>
+                            <input type="date" id="birthday" name="birthday" class="form__input form-control" onfocus="this.max = new Date().toISOString().split('T')[0]" required>
+                        </div>
+
+                        <fieldset class="form__fieldset mb-3 border p-3 rounded">
+                            <legend class="form__legend float-none w-auto px-2 fs-6 fw-bold">5. Пол:</legend>
+                            <div class="form-check">
+                                <input type="radio" id="genderMale" name="gender" value="male" class="form-check-input" checked>
+                                <label for="genderMale" class="form-check-label">Мужской</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="genderFemale" name="gender" value="female" class="form-check-input">
+                                <label for="genderFemale" class="form-check-label">Женский</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form__row mb-3">
+                            <label for="languages" class="form__label form-label">6. Любимый язык программирования:</label>
+                            <select id="languages" name="languages[]" multiple class="form__select form-select" size="5">
+                                <option value="Pascal">Pascal</option>
+                                <option value="C">C</option>
+                                <option value="C++" selected>C++</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                                <option value="Haskell">Haskell</option>
+                                <option value="Clojure">Clojure</option>
+                                <option value="Prolog">Prolog</option>
+                                <option value="Scala">Scala</option>
+                            </select>
+                        </div>
+
+                        <div class="form__row mb-3">
+                            <label for="bio" class="form__label form-label">7. Биография:</label>
+                            <textarea id="bio" name="bio" rows="5" class="form__textarea form-control" placeholder="Коротко о себе..."></textarea>
+                        </div>
+
+                        <div class="form__row mb-3 form-check">
+                            <input type="checkbox" id="contract" name="contract" value="yes" class="form-check-input" required>
+                            <label for="contract" class="form-check-label">С контрактом ознакомлен(а)</label>
+                        </div>
+
+                        <div class="form__row">
+                            <button type="submit" class="form__button btn btn-primary px-4">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- КАЛЬКУЛЯТОР СТОИМОСТИ (Лабораторная работа №5) -->
+            <section id="calculator" class="col-12 order-4 section section--calculator">
+                <div class="p-3 p-md-4 bg-white border rounded shadow-sm">
+                    <h2 class="section__title text-secondary mb-3">Калькулятор стоимости заказа (ЛР5)</h2>
+                    
+                    <form id="calc-form">
+                        <div class="mb-3">
+                            <label for="calc-product" class="form-label">1. Выберите товар:</label>
+                            <select id="calc-product" class="form-select">
+                                <option value="500">Товар А — 500 руб.</option>
+                                <option value="1200">Товар Б — 1200 руб.</option>
+                                <option value="3500">Товар В — 3500 руб.</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="calc-quantity" class="form-label">2. Количество товара:</label>
+                            <input type="text" id="calc-quantity" class="form-control" placeholder="Например: 3">
+                            <div id="calc-error" class="text-danger mt-1 small"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button" id="calc-btn" class="btn btn-success px-4">Рассчитать</button>
+                        </div>
+
+                        <div id="calc-result" class="fw-bold text-primary fs-5 mt-2"></div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- ДИНАМИЧЕСКИЙ КАЛЬКУЛЯТОР УСЛУГ (Лабораторная работа №6) -->
+            <section id="service-calculator" class="col-12 order-5 section section--service-calculator">
+                <div class="p-3 p-md-4 bg-white border rounded shadow-sm">
+                    <h2 class="section__title text-secondary mb-3">Калькулятор стоимости услуг (ЛР6)</h2>
+
+                    <form id="service-form">
+                        <div class="mb-3">
+                            <label for="service-quantity" class="form-label fw-bold">1. Количество:</label>
+                            <input type="text" id="service-quantity" class="form-control" value="1" placeholder="Введите количество">
+                            <div id="service-quantity-error" class="text-danger mt-1 small"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">2. Выберите тип услуги:</label>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="serviceType" id="type1" value="type1" checked>
+                                    <label class="form-check-label" for="type1">Базовая услуга (1000 руб.)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="serviceType" id="type2" value="type2">
+                                    <label class="form-check-label" for="type2">Расширенная услуга (2000 руб.)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="serviceType" id="type3" value="type3">
+                                    <label class="form-check-label" for="type3">Премиум услуга (3500 руб.)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Опция (селект) - только для типа 2 -->
+                        <div id="service-options-block" class="mb-3" style="display: none;">
+                            <label for="service-option" class="form-label fw-bold">3. Выберите опцию услуги:</label>
+                            <select id="service-option" class="form-select">
+                                <option value="opt1">Стандартный комплект (без доплаты)</option>
+                                <option value="opt2">Улучшенный комплект (+500 руб.)</option>
+                                <option value="opt3">Максимальный комплект (+1000 руб.)</option>
+                            </select>
+                        </div>
+
+                        <!-- Свойство (чекбокс) - только для типа 3 -->
+                        <div id="service-properties-block" class="mb-3" style="display: none;">
+                            <label class="form-label fw-bold">3. Выберите свойства услуги:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="prop-express" name="propExpress" value="700">
+                                <label class="form-check-label" for="prop-express">Экспресс-доставка (+700 руб.)</label>
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-light rounded border mt-3">
+                            <span class="fs-5 fw-bold">Итоговая стоимость: </span>
+                            <span id="service-total-price" class="fs-4 fw-bold text-success">1000 руб.</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer container mt-4">
+        <div class="p-3 bg-white border rounded shadow-sm text-center">
+            <p class="footer__text m-0 text-muted">(с) Перетолчин Данил</p>
+        </div>
+    </footer>
+
+</body>
+</html>
